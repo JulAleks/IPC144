@@ -1,4 +1,0 @@
-﻿  core.c
-C:\Julia\SENECA\Semester 1\IPC 144\Milestone\A1\MS1\Project - updated string\Project1\core.c(91,9): warning C4101: 'i': unreferenced local variable
-C:\Julia\SENECA\Semester 1\IPC 144\Milestone\A1\MS1\Project - updated string\Project1\core.c(118,21): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Project1.vcxproj -> C:\Julia\SENECA\Semester 1\IPC 144\Milestone\A1\MS1\Project - updated string\Project1\x64\Debug\Project1.exe
