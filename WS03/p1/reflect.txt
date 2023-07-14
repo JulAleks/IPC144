@@ -1,0 +1,70 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name : Julia Alekseev
+Student ID#: 051292134
+Email: jalekseev@myseneca.ca
+Section : G
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.  printf(" 1|       %d         |      %d      |   %d   |\n", (requestedCoffee == 'l' || requestedCoffee == 'L') && (requestedCoffee != 'R' || requestedCoffee != 'r') && (requestedCoffee != 'm' || requestedCoffee != 'M'), (dailyServing > 0) && (dailyServing < 5) && !(dailyServing > 5), (requestedCream == 'y' || requestedCream == 'Y') && (requestedCream != 'N' || requestedCream != 'n'));
+    printf(" 2|       %d         |      %d      |   %d   |\n", (requestedCoffee == 'r' || requestedCoffee == 'R') && (requestedCoffee != 'l' || requestedCoffee != 'L') && (requestedCoffee != 'm' || requestedCoffee != 'M'), (dailyServing > 9) && !(dailyServing < 9), (requestedCream == 'y' || requestedCream == 'Y') && (requestedCream != 'N' || requestedCream != 'n'));
+    printf(" 2|       %d         |      %d      |   %d   |\n", (requestedCoffee == 'm' || requestedCoffee == 'M') && (requestedCoffee != 'R' || requestedCoffee != 'r') && (requestedCoffee != 'l' || requestedCoffee != 'L'), (dailyServing > 3) && (dailyServing < 10), (requestedCream == 'y' || requestedCream == 'Y') && (requestedCream != 'N' || requestedCream != 'n'));
+    
+A) 22 logical 
+requestedCoffee == 'l'
+requestedCoffee == 'r'
+requestedCoffee == 'm'
+requestedCoffee == 'L'
+requestedCoffee == 'R'
+requestedCoffee == 'M'
+requestedCoffee != 'R'
+requestedCoffee != 'r'
+requestedCoffee != 'l'
+requestedCoffee != 'L'
+requestedCoffee != 'M'
+requestedCoffee != 'm'
+dailyServing > 0
+dailyServing < 5
+dailyServing > 9
+dailyServing < 9
+dailyServing > 3
+dailyServing < 10
+requestedCream == 'y'
+requestedCream == 'Y'
+requestedCream != 'n'
+requestedCream != 'N'
+
+B) 17 relational 
+requestedCoffee == 'l' || requestedCoffee == 'L'
+requestedCoffee != 'R' || requestedCoffee != 'r'
+(requestedCoffee == 'l' || requestedCoffee == 'L') && (requestedCoffee != 'R' || requestedCoffee != 'r')
+requestedCoffee != 'm' || requestedCoffee != 'M'
+(requestedCoffee != 'R' || requestedCoffee != 'r') && (requestedCoffee != 'm' || requestedCoffee != 'M')
+requestedCoffee == 'm' || requestedCoffee == 'M'
+requestedCoffee != 'R' || requestedCoffee != 'r'
+(requestedCoffee == 'm' || requestedCoffee == 'M') && (requestedCoffee != 'R' || requestedCoffee != 'r')
+requestedCoffee != 'l' || requestedCoffee != 'L'
+(requestedCoffee != 'R' || requestedCoffee != 'r') && (requestedCoffee != 'l' || requestedCoffee != 'L')
+(dailyServing > 0) && (dailyServing < 5) 
+(dailyServing < 5) && !(dailyServing > 5)
+(dailyServing > 9) && !(dailyServing < 9)
+(dailyServing > 3) && (dailyServing < 10)
+(requestedCream == 'y' || requestedCream == 'Y'
+requestedCream != 'N' || requestedCream != 'n'
+(requestedCream == 'y' || requestedCream == 'Y') && (requestedCream != 'N' || requestedCream != 'n')
+
+2. I used in my w3p1 DeMorgan’s Law: 
+   !(product3 == product1 || product3 == product2)
+
+   The other way would be 
+   product3 != product1 && product3 != product2
+
+3. We can group variable on the top of the code block or or function for us to know that they relate to the following code
+   We can add discription using /**/ or // to expalin what those variables are used for 
+

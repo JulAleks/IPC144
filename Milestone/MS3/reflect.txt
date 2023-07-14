@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                        Assignment 1 - Milestone 3
+Full Name : Julia Alekseev
+Student ID#: 051292134
+Email: jalekseev@myseneca.ca
+Section : G
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.	The assignment required me to create several additional functions. I have created five of them: appointment sorting function, fetching a booked appointment function, finding an available time slot function, a function that 	checks if the schedule is full and a function that takes date input. 
+	The function that checks if the schedule is full, is my personal addition to the assignment and wasn’t required. 
+	•	Sorting function: void sort(struct Appointment* appoints, int max)
+		o	This function was designed to chronologically sort all the appointments in the appointment structure. I used the selection sorting algorithm, and two loops to go through the values locating the lowest element index and 			switching the value with the first index; it will continue to do so until everything is sorted. 
+		o	The Value of this function is that, in a real-life clinic, the employees would need to have their schedule printed day-by-day, or several months ahead in a chronological matter to be able to plan their time accordingly 			to the patient and the type of the required appointment. 
+
+	•	Fetching booked appointment: int bookedAppt(int patientNumber, struct Date date, struct Appointment* appoint, int max);
+		o	This function was designed to loop through the arrays of the appointment structure to check if the patient has a booked appointment on a specific day. If the patient does, it will return the index of that appointment 			and if does not exist it will return -1. 
+
+		o	This function was needed to enable locating this appointment and if it does exist to remove it from the schedule. Without finding the specific index of this appointment there wouldn’t be a way to set the value of that 			index to zero. 
+
+	•	Finding an available time slot function: int searchTimeSlot(struct Appointment* appoints, struct Date date, struct Time time);
+		o	This function was designed to loop through the appointment struct arrays to see if the requested time slot is booked or available for booking. If the slot is free, it will return 1, if it is already booked by another 			patient, it will return -1. 
+
+		o	The value of this function is that it prevents double booking. Most clinics work with a limited number of staff, and double bookings can be what make it or break the day. As per the instructions as well, it was clearly 			stated that no double booking allowed. 
+
+2.	In my clinic.c file, I do not have scanfs. All my functions that require user input, are calling the helper functions from core.c. This was designed for modularity. Each one of those functions was designed and tested to perform a 	certain goal, and by using them instead of the regular scanfs, we could shorten the code in the clinic file. Also, by using them, we eliminate the redundancy of code reusage, for example, input in range function. It is used for 	the input of proper numbers of buttons in the menu, input the days of the month or the month itself. There was no need for repeated lines that would output the same error of asking to input a number at a certain range.   
+
+3.	In the Add Appointments feature, I used the isFull function to check if the schedule is full as it has a maximum capacity of 50 appointments. I also used the searchTimeSlot function for checking if the time slot is available for 	booking. These functions are responsible for checking and manipulating the schedule, so they are placed in the module that handles the scheduling logic.
+
+	In the appointment delete function, I used the bookAppt function to find the booked appointment for a particular patient. This ensures that the intended appointment is being deleted, and not the wrong one. This function is also 	placed in the scheduling module as it is closely related to the scheduling logic.
+
+	For the sort function, I created two separate functions.
+	viewAllAppointments and viewAppointmentSchedule. Both functions require the schedule to be printed in chronological order. The sort functionality is not directly related to the scheduling logic, so it was designed as a separate 	function that could be used in both cases to prevent redundancy.
+
+
+

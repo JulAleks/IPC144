@@ -1,0 +1,4 @@
+﻿  w6p2.c
+C:\Julia\SENECA\Semester 1\IPC 144\WS06\p2\Project1\w6p2.c(117,43): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Julia\SENECA\Semester 1\IPC 144\WS06\p2\Project1\w6p2.c(145,33): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Julia\SENECA\Semester 1\IPC 144\WS06\p2\Project1\x64\Debug\Project1.exe

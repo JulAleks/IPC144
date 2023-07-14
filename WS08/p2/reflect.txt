@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name : Julia Alekseev
+Student ID#: 051292134
+Email: jalekseev@myseneca.ca
+Section : G
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.	One of the benefits that I found with using the helper functions is reducing the amount of code that needs to be written. Instead of creating multiple “if/else” statements for every single time an input needs to be entered, one function could be used to preform the validation in multiple places. I personally found a huge disadvantage regarding debugging. It was much harder to identify where the errors are, especially when the assignment is build backwards, that I need to write my function to work correspondingly with the main functions, which I am not allowed to touch.   As well, as a beginner I ma still trying to grasp the whole parameter/identifier etc. and, how to use them properly. 
+2.	The highly cohesive functions would be the get int positive and int negative , and the first two conversion functions. They are independent and do not require any outsource function to work seamlessly. I would say the most coupled function would be the generateReportData structure. It is depending on the catFoodInfo structure to get the details of the product and depends on all other functions to store the needed converted values. If there is an error in any other function the whole flow will be ruined and the output won’t be proper. To improve it maybe, I would break it down to separate parts and not as one part all together, to make each part independent and not dependent on the other. As well in the conversion functions, I’ve been taking results from the previous function to calculate something, maybe a better way would be to design each function to do their own calculations independently and not rely on the result of the other. Because if I would want to use for example the serving function in another place, I won’t be able to use it without readjusting it to be more neutral and not dependent on the previous calculations. 
+3.	The advantages are that a chunk of information can be passed at ones rather than write multiple lines of code to preform the same task. Display cat food could be done by sending a struct to the function rather than specific parameters in that struct. It can be done more efficiently, and to be passed by pointers for better performance. 

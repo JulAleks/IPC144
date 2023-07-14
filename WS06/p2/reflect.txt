@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name : Julia Alekseev
+Student ID#: 051292134
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1)	While, do While, and for Loop are the three different types of loops available in C. Even if we can produce outputs that are identical, 
+      we will choose one over the other based on how we want our code to function. If we don't know how many iterations will be required but still want the loop to run at least once, 
+      we should use do while. While loop is useful when we want to compare values that return a true or false value, it would not iterate if the statement returned to be false. 
+      As most of the assignment the system interacted with the user, and was depended on the user’s input, I have decided hat it would be preferable to use a do-while loop to ensure that 
+      each component will be shown at least once. For example: When asking to input the net salary, number of items, their value, priority, or the option to finance. 
+      In addition, to the second part of the assignment that based on the user input, the program will calculate the total value of the selected items, how long it will take them to pay for it, 
+      based on their net income, and if they chose to finance it, to prompt them a message saying that ‘financing options are available’. 
+      When working with arrays, we prefer to utilise the for loop, which is the third form of loops in C. The for loop will execute each iteration in a fixed sequence based on the given value. 
+      It is customary to use “i” as variable during loop iterations. We can access locations in the array and output their data by using “i”. For example when we are looking to access all the items 
+      under a certain priority and count their total coast. In addition, while we are accessing those value to check if they need to be financed or not and based on that prompt ‘financing options are available’. 
+
+2)	For me, most of the assignment was debugging focused. I had to make sure everything was running smoothly. To determine where the logical or mathematical problems occurred when there were semantic errors, 
+      I used printf statements to check how my variables changed. I occasionally divided the code into smaller chunks to concentrate step-by-step on places to verify they are operating as intended and not interfering 
+      with subsequent logic or iterations. Visual Studio was quite helpful in locating synatic issues because it won't compile if there is an obvious problem. I occasionally referred to my notes to confirm that my 
+      syntax is accurate and that I am appropriately addressing the arrays.
+
+
+3)	Recognizing the problem would be the first step, in which includes identifying the field or section of the code the error is occurring. We can see from the example that the mistake is in column 33, 
+      which is the first field of the user's input. The next step is to determine whether the expected value is prompted by a particular iteration, mathematical reasoning, condition, or in this instance, a user input. 
+      The error due to the wrong input caused a synatic error. To fix the problem in this case would be to run the program again and make sure to enter the expected amount of 567.89.
+ 

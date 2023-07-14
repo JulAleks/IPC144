@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name : Julia Alekseev
+Student ID#: 051292134
+Email: jalekseev@myseneca.ca
+Section : G
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.	Yes, I have managed not to create a non repetitive code, although it was not easy. 
+I struggled at the beginning with coming up with the proper logic to create the ruler with printing 1-9 and instead of 10 to print 0, 
+as well with the ruler that prints that uses “|” to make sure that at 10 it will print 1, and at 20, 2. But at the end I figured that out. 
+I used different loops for various parts of the code, together with different conditions to make sure that there is no duplication of code, 
+that every part of the loop is being executed the proper number of times, with the right conditions to make sure that the game works properly. 
+I have noticed that there is no representation in the assignment instructions to code what happens if the player is out of moves, but still alive. 
+I took the initiative and added an error message for if that case is true.
+
+2.	Structures simplified the code by grouping related data together into a single object. It makes it to be stored and manipulated relevant data,
+ because it can treat it as single entity rather than a bunch of separate variables. 
+My code uses structs to group together data that is related to the user and the game itself in different containers.  
+Without struct, there will be a need to declare variables separately which might become confusing and hard to maintain. 
+Yes, I could have use separate variables and arrays without grouping them, but it will make the code bulky and confusing. 
+For example, “moves” are those the moves that are allowed in the game or are those the moves that the user has? 
+Structs allow us to pass and retrieve needed data by using single arguments, which makes it very easy to read and maintain. 
+
+3. if (gamer.numLives == 0) {
+
+           
+        }
+        else if (game.moves == 0) {
+
+           
+        }
+        else {
+            int moveFlag = 0;
+              do {
+                
+                if (gamer.mv < 1 || gamer.mv >20) {
+                    
+                }
+                else {
+                  }
+                    
+                }while (moveFlag == 0);
+

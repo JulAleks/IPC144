@@ -1,0 +1,39 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Julia Alekseev
+Student ID#: 051292134 
+Email: jalekseev@myseneca.ca
+Section : G
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.	The difference in the output is because price1 is represented with a single floating point. 
+      When it comes to floating point numbers the computer stores them in different ways because there is a limited capacity in the memory when we declare it to be a float, 
+      we are declaring it to be stored under 32bit system. 
+      Likewise, price3 is a single floating point as well, however the value is different and therefore it will be stored differently in the (base 2) computer memory system compared to price1. 
+      The ability to store and provide a precise output is compromised by using less memory. If we would like to achieve a precise output a double floating point, which uses 64bits, should be used as in price2 and price4. 
+
+2.	The reason why we can see that the result of all three are as intended, because in the first statement uses 100.0 (floating point) instead of 100 (int) to implacably promote ‘money’ to become a floating point.  
+      In the second, and the third statement we are using an explicit casting to declare to ‘100’ (int) in statement 2 and ‘money’(int) in statement 2 to become double pointers.  By doing so we are changing 100=100.00, and money=7245.00.  Although the syntax might look different the end result, the output, will be the dame and represented as a double floating point number. 
+
+3. a) The value of ‘result’ is 72. Because result was declared as integer. Although when we divide 7245/100 the proper value is 72. 45, the integer cannot store fractions and therefore uses truncation to round up the value to become 
+      an integer the integer part of the result.
+
+   b) 1. $0.00
+      2. $72
+      3. $0.00
+      4. $72
+   c) In all cases money and results were declared integer, although, in statements 1 and 3 there is a call to output a floating-point number. However, there was not any type of casting or promotion done to change the 
+      values to become floating point numbers. Therefore, the output result is 0 in a floating point. The printf statement called a floating-point number, which did not exist. So, it outputted a 0 as a value in a 
+      floating-point form of 0.00. 
+      We can conclude that it is very important to use the proper variable and possibly modify them by  casting, promoting or truncating to achieve a wanted result. In addition, it is important to use proper specifiers 
+      with the proper variables to achieve the wanted result. 
+
+
+

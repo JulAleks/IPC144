@@ -1,0 +1,43 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name : Julia Alekseev
+Student ID#: 051292134
+Email: jalekseev@myseneca.ca
+Section : G
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. I have designed an application that the user can enter the needed groceries, and then when they arrive to the store, they can add the quantities that they need of the wanted products and the program will keep track and prompt them if they are trying to buy too many or not enough of the needed product. 
+   a)	My code starts with the main function. 
+   b)	Before starting the main loop, I declared a flag variable to make sure there is an option to exit the main loop if the user is done with their shopping. 
+   c)	 For the first part of the shopping loop, I’ve declared variables to store in them the quantity of the requested vegetables and fruits. I made sure that the names of my variables are short and related to the needed product, so if there will be a need to modify them it would be easily identified and changed. 
+   d)	I then have designed small loops that prompts the user to enter the quantity of each product. The loops will continue going until the user enters 0 or more quantity per product. 
+   e)	At that point, after the user will have all their needed groceries on their “need list”, I have designed several bigger loops that would check if the product were needed by the user. If the user initially did not express their need for apples for example, the loop would be omitted, and the program would continue reassessing the following product. 
+   f)	In case the loop detects that the product is needed, there is an initialization of 3 variables that would evaluate the entered quantity, their basket and the a flag  with a name that relates to the product to make  sure there is a clear entry and exit from the loop. At that point the program will start running the nested loop that prompts the user to enter the quantity they picked up from the shelve.  The loop will reassess the needed quantity and the entered quantity to make sure the user does not forget the quantity they need.  
+     -	In case they will enter a number that is negative, the program will advise that the quantity that is required is at least one, since we are already determined that we need that product. If the product was not needed our parent loop would be omitted. 
+     -	In case the quantity that was added is bigger than the needed quantity, the program would warn the user that they are adding too many of the wanted product and advise them how many they need, after evaluating how many products they have in their basket variable. 
+     -	If the user enters a positive number that is lower than the wanted quantity, the program will add that to the backet and would prompt them that they are still missing some products. 
+     -	At the point the program will reassess if the basket for the specific product is equal to the needed quantity, if so, the loop would advise the user that they are done with the specific product and exit. The following loop for the next product will be revaluated to determine in that product is needed. If the basket has a lower quantity than needed the user will be prompt to add more of the needed product as listed in the previous statement. 
+   g)	The following loop for the next product will be revaluated to determine if that product is needed. 
+   h)	After all products that were needed were picked, I set up an escape variable to store the response of the user after being prompt to answer if they would like to continue shopping or not. 
+     -	If the user asks to continue, they would be brought to the beginning of the main loop to enter their wanted quantities of the products they require.
+     -	If the user requested to finish, the initial flag would be turned on, the main loop will exit and advise the user that they are done and wishing them a good day.  
+
+   It was important for me not only as the person who develops the code but as well as someone that might need to change it in the future that all my variable names make sense. If my product is apples my variable name should never be “X” or a “NUM”. When it is random names, it is hard to identify to which loop and to what exactly they belong. Is it the flag? Is it the product? Is it something else? 
+   In addition, following the guidelines of proper structure of spacing, and the location of the curly braces makes it easy to ready and identify what block belongs to which loop, and which part of the code. 
+
+2.  It would have been quite difficult to create the same concept without using nested loops. 
+    -	There could be an option to use logical and relational expressions to reassess whether a certain product is needed, and continue to reassess the entered quantities vs the needed quantities, creating longer code and difficult to read. 
+    -	There could be an option to use switch statements to declare scenarios, in case a specific scenario is matched, the case will break, and continue to the next switch. On the other hand, in case there was a higher quantity entered to let the user know, they have entered too much etc. 
+    At this point of my coding knowledge I believe that the nested loops were the easiest  and cleanest way to address this  program flow. 
+
+3. In the given scenario, using just if statements would not be the best choice, since single if statements evaluate themselves, and disregard of other possible if statements. When we use if together with else if, we are reassessing the first statement in case that it is false, the system automatically reassess the next, until it reaches a statement that comes back true and then it will preform the requested action for that specific condition. 
+   In the given scenario, since the input is single numbers of 1-5, if I would be designing the code, I would choose to use ‘Switch’ cases. Since it is requested to preform a unique action depending on the chosen number, which I find like designing a menu, and as we have been taught in class, the best go to in menu design is ‘Switch’. 
+
+
+
