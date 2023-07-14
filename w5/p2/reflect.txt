@@ -1,0 +1,16 @@
+/*/////////////////////////////////////////////////////////////////////////
+                       OOP244 Workshop - #5 (PART 2-DIY)
+Student Name: Julia Alekseev
+Student ID#:  051292134
+Email      :  jalekseev@myseneca.ca
+Section    :  NEE
+Date:      :  June 14, 2023
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+
+This week workshop covered encapsulation and operators and conversions overload.
+Operator and conversion overloads allow us to customize the behaviour of the operator for objects in the class. It gives us the opportunity to decide how a certain symbol will behave while assigning it using mathematical symbols, assignment or greater than brackets. 
+As well we can use the assignments to cast our class and return converted values. By redefining the behaviour with overload operations, it enables us to create custom operators for our classes, as well as flexibility. As well discussing how we can use a friend function to access privet members which can be used as a shortcut to make getter functions. 
+In my lab part I have used friend functions, but after discussing it with my professor I have put an effort into making sure that in my DIY part I would avoid using friend shortcuts and created the needed getters for me to achieve the purpose of my function. 
+I found the workshop being slightly confusing with the instruction of conveying the message of what is expected from us vs the expected output. I had struggled with the last part of the workshop assuming that we would need to pass val as value and return the added new value, although after analyzing everything I have realized that an address of val needed to be passed. Then the value would be updated in the actual val address to 140. Then when trying to reassign it with a faulty value, nothing will happen because it is faulty keeping the value of val at 140.  
